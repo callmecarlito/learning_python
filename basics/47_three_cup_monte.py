@@ -22,17 +22,18 @@ def check_guess(cups, players_cup):
         print("Sorry, maybe next time!")
     print(cups)
 
-#Initialize list
-cups = ['0', ' ', ' ']
+if __name__ == "__main__":
+    #Initialize list
+    cups = ['0', ' ', ' ']
 
-#Shuffle list
-shuffled_cups = shuffle_list(cups)
+    #Shuffle list
+    shuffled_cups = shuffle_list(cups)
 
-#User guess
-players_cup = player_guess()
+    #User guess
+    players_cup = player_guess()
 
-#Checks user guess
-check_guess(shuffled_cups, players_cup)
+    #Checks user guess
+    check_guess(shuffled_cups, players_cup)
 
 
 
